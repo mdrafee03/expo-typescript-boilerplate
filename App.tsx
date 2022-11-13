@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import i18n from './locale';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>{i18n.t('app_name')}</Text>
+      <Text>{i18n.t('welcome')}</Text>
+      <StatusBar style='auto' />
     </View>
   );
 }
