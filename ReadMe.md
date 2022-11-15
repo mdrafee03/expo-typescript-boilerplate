@@ -5,6 +5,7 @@
 - Jest with React Native Testing Library
 - Maximum typescript supported
 - Expo Localization
+- SVG import support
 
 ## Available Scripts
 
@@ -35,3 +36,15 @@ Like `npm start`, but also attempts to open your app in the iOS Simulator if you
 #### `yarn android`
 
 Like `npm start`, but also attempts to open your app on a connected Android device or emulator.
+
+## Import SVG
+
+Import svg like the following
+
+```
+import Atom from './assets/images/atom.svg';import
+...
+
+
+<Atom width={200} height={200} />
+```
